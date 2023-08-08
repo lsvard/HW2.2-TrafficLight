@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         startButton.layer.cornerRadius = 10
     }
     
-        @IBAction func startButtonDidTapped() {
+    @IBAction func startButtonDidTapped() {
             if redView.alpha != 1 && yellowView.alpha != 1 && greenView.alpha != 1 {
                 redView.alpha = 1
                 startButton.setTitle("NEXT", for: .normal)
