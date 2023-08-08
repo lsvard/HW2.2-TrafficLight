@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,22 +13,22 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW2_2_TrafficLight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="ca0-8w-v3Z">
-                                <rect key="frame" x="147" y="78" width="120" height="424.5"/>
+                                <rect key="frame" x="135" y="77.000000000000028" width="120" height="424.66666666666674"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdg-mf-H6L">
-                                        <rect key="frame" x="0.0" y="0.0" width="120" height="119.5"/>
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdg-mf-H6L">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="119.66666666666667"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dnf-0r-dMK">
-                                        <rect key="frame" x="0.0" y="152.5" width="120" height="119.5"/>
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dnf-0r-dMK">
+                                        <rect key="frame" x="0.0" y="152.66666666666666" width="120" height="119.33333333333334"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tu5-eZ-Zmp">
-                                        <rect key="frame" x="0.0" y="305" width="120" height="119.5"/>
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tu5-eZ-Zmp">
+                                        <rect key="frame" x="0.0" y="305" width="120" height="119.66666666666669"/>
                                         <color key="backgroundColor" red="0.1983072236760326" green="0.68154707397382286" blue="0.0010650493331682046" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                 </subviews>
@@ -38,7 +38,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBl-Qo-5Sc">
-                                <rect key="frame" x="132" y="779" width="150" height="53"/>
+                                <rect key="frame" x="120" y="727" width="150" height="53"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="5er-Q8-n20"/>
@@ -48,6 +48,9 @@
                                 <state key="normal" title="START">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="startButtonDidTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="DP8-dN-cCc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -59,6 +62,12 @@
                             <constraint firstItem="ca0-8w-v3Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pod-qu-uE4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenView" destination="Tu5-eZ-Zmp" id="nag-CI-WM3"/>
+                        <outlet property="orangeView" destination="Dnf-0r-dMK" id="fCq-aW-9o4"/>
+                        <outlet property="redView" destination="qdg-mf-H6L" id="9kM-7u-6Cq"/>
+                        <outlet property="startButton" destination="XBl-Qo-5Sc" id="Q4d-jM-fAS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
