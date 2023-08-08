@@ -38,48 +38,4 @@ class ViewController: UIViewController {
             redView.alpha = 1
         }
     }
-    
-    //    @IBAction func startButtonDidTapped(_ light: Double) {
-    //        let alpha = 0.0
-    //        switch alpha {
-    //        case redView.alpha:
-    //            redView.alpha = 1.0
-    //            yellowView.alpha = 0.3
-    //            greenView.alpha = 0.3
-    //            fallthrough
-    //        case yellowView.alpha:
-    //            redView.alpha = 0.3
-    //            greenView.alpha = 0.3
-    //            yellowView.alpha = 1
-    //            fallthrough
-    //        case greenView.alpha:
-    //            redView.alpha = 0.3
-    //            yellowView.alpha = 0.3
-    //            greenView.alpha = 1
-    //        default:
-    //            break
-    //        }
-    //    }
-    
-    //    @IBAction func startButtonDidTapped(_ light: Double) {
-    //        switch light {
-    //        case redView.alpha:
-    //            redView.alpha = 1.0
-    //            yellowView.alpha = 0.3
-    //            greenView.alpha = 0.3
-    //            startButton.setTitle("NEXT", for: .normal)
-    //            fallthrough
-    //        case yellowView.alpha:
-    //            redView.alpha = 0.3
-    //            greenView.alpha = 0.3
-    //            yellowView.alpha = 1
-    //            fallthrough
-    //        case greenView.alpha:
-    //            redView.alpha = 0.3
-    //            yellowView.alpha = 0.3
-    //            greenView.alpha = 1
-    //        default:
-    //            break
-    //        }
-    //    }
 }
