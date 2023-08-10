@@ -24,6 +24,7 @@
 		0A656C512A8212A700F31F4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A656C542A8212A700F31F4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A656C562A8212A700F31F4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A7D5ECA2A84CED700CE49DD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 		0A656C3C2A8212A400F31F4C = {
 			isa = PBXGroup;
 			children = (
+				0A7D5ECA2A84CED700CE49DD /* README.md */,
 				0A656C472A8212A400F31F4C /* HW2.2 TrafficLight */,
 				0A656C462A8212A400F31F4C /* Products */,
 			);
